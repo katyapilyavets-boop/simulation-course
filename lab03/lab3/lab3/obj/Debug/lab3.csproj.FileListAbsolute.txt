@@ -1,0 +1,9 @@
+C:\Users\Екатерина\Desktop\ИМ\lab3\lab3\obj\Debug\lab3.csproj.AssemblyReference.cache
+C:\Users\Екатерина\Desktop\ИМ\lab3\lab3\obj\Debug\lab3.Properties.Resources.resources
+C:\Users\Екатерина\Desktop\ИМ\lab3\lab3\obj\Debug\lab3.csproj.GenerateResource.cache
+C:\Users\Екатерина\Desktop\ИМ\lab3\lab3\obj\Debug\lab3.csproj.CoreCompileInputs.cache
+C:\Users\Екатерина\Desktop\ИМ\lab3\lab3\bin\Debug\lab3.exe.config
+C:\Users\Екатерина\Desktop\ИМ\lab3\lab3\bin\Debug\lab3.exe
+C:\Users\Екатерина\Desktop\ИМ\lab3\lab3\bin\Debug\lab3.pdb
+C:\Users\Екатерина\Desktop\ИМ\lab3\lab3\obj\Debug\lab3.exe
+C:\Users\Екатерина\Desktop\ИМ\lab3\lab3\obj\Debug\lab3.pdb
