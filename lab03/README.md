@@ -1,7 +1,145 @@
-### Клеточные автоматы. Лесные пожары (GUI)
+# Лабораторная работа №3 (Лесной пожар)
 
-**Задание:**  
-Реализовать моделирование возникновения и распространения лесных пожаров с использованием двумерного клеточного автомата.
+## Возможные состояния клетки
 
-**Требования:**
-- реализовать **не менее трёх дополнительных правил** поведения системы.
+public enum CellState
+{
+    Empty = 0,    //пустая
+    Tree = 1,     //дерево (может гореть)
+    Burning = 2,  //горит(
+    Burnt = 3,    //сгорело((
+    Barrier = 4   //барьер
+}
+
+## Шанс возгорания 
+
+if (rand.NextDouble() < prob) (Если нет дополнительных факторов)
+где prob = 0.7
+
+if (rand.NextDouble() < Math.Min(baseBurnProbability * (0.5 + temperature) * windModifier, 1.0)) 
+но ветер может быть попутный или нет, тогда
+double windModifier = (windDirection == попутный) ? (1.0 + windStrength * 1.5) 
+                      : (windDirection == встречный) ? (1.0 - windStrength * 0.5) 
+                      : 1.0;
+## Горение дерева (Burning → Burnt)
+Описание: Горящее дерево уменьшается во времени горения (3 шага). Когда время истекает, дерево становится пеплом.
+
+case CellState.Burning:
+    nextCell.BurnTime--;
+    if (nextCell.BurnTime <= 0)
+    {
+        nextCell.State = CellState.Burnt;
+        newBurntTrees++;
+    }
+    else
+    {
+        newBurningTrees++;
+    }
+    break;
+
+## Возгорание от соседа (Tree → Burning)
+Описание: Дерево может загореться, если рядом есть горящий сосед.
+
+for (int dx = -1; dx <= 1; dx++)
+{
+    for (int dy = -1; dy <= 1; dy++)
+    {
+        if (dx == 0 && dy == 0) continue;  // пропускаем саму клетку
+
+        int nx = x + dx;
+        int ny = y + dy;
+
+        if (nx >= 0 && nx < width && ny >= 0 && ny < height)
+        {
+            Cell neighbor = grid[nx, ny];
+            if (neighbor.State == CellState.Burning)
+            {
+                double prob = CalculateIgnitionProbability(x, y, nx, ny);
+                if (rand.NextDouble() < prob)
+                {
+                    ignited = true;
+                    break;
+                }
+            }
+        }
+    }
+    if (ignited) break;
+}
+
+Ключевые моменты:
+Проверяются все 8 соседей (включая диагонали)
+Проверяются границы поля (защита от выхода за массив)
+Достаточно одного горящего соседа для возгорания
+Вероятность рассчитывается с учётом ветра и температуры
+
+## Возгорание от молнии (Tree → Burning)
+Описание: Дерево может загореться случайным образом от удара молнии, даже без горящих соседей.
+
+if (!ignited && rand.NextDouble() < lightningProbability * (1 + temperature))
+{
+    ignited = true;
+}
+
+Параметры:
+lightningProbability = 0.001 (0.1% базовый шанс)
+Температура увеличивает шанс молнии
+
+## Рост дерева (Empty → Tree)
+Описание: Пустая клетка может зарасти новым деревом с малой вероятностью.
+
+case CellState.Empty:
+    if (rand.NextDouble() < treeGrowthProbability)
+    {
+        nextCell.State = CellState.Tree;
+        newTotalTrees++;
+    }
+    break;
+    
+Параметры:
+treeGrowthProbability = 0.01 (1% за шаг)
+
+## Барьер (Barrier → Barrier)
+Описание: Барьеры не меняются, не горят и блокируют распространение огня.
+
+if (currentCell.IsBarrier)
+{
+    newTotalTrees++;
+    continue;  // пропускаем все правила
+}
+
+# САМЫЙ СОК
+
+## Первое место 
+
+Расчёт вероятности (Математика)
+Метод: CalculateIgnitionProbability()
+Здесь происходит превращение настроек (температура, ветер) в конкретное число — шанс пожара. 
+
+// Температура
+probability *= (0.5 + temperature);
+
+// Ветер (усиливает или гасит)
+if (directionToCell == windDirection || IsAdjacentDirection(...))
+{
+    probability *= (1.0 + windStrength * 1.5);  // Разгон огня
+}
+else if (IsOppositeDirection(...))
+{
+    probability *= (1.0 - windStrength * 0.5);  // Затухание
+}
+
+## Второе место
+
+Метод: DoStep() (внутри цикла проверки соседей)
+
+// 1. Берём рассчитанную вероятность
+double prob = CalculateIgnitionProbability(x, y, nx, ny);
+
+// 2. Сравниваем со случайным числом 
+if (rand.NextDouble() < prob)
+{
+    ignited = true;  // Решение принято: дерево горит
+}
+
+(rand.NextDouble() выдает число от 0 до 1. Если вероятность пожара 70% (0.7), а выпало 0.85 — дерево выжило. Если 0.42 — сгорело. Это создает непредсказуемость и живое поведение.)
+                      
