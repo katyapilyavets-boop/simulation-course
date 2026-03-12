@@ -10,9 +10,9 @@ public enum CellState
     Burnt = 3,    //сгорело((
     Barrier = 4   //барьер
 }
-
+```
 ## Шанс возгорания 
-
+```c#
 if (rand.NextDouble() < prob) (Если нет дополнительных факторов)
 где prob = 0.7
 
@@ -21,9 +21,10 @@ if (rand.NextDouble() < Math.Min(baseBurnProbability * (0.5 + temperature) * win
 double windModifier = (windDirection == попутный) ? (1.0 + windStrength * 1.5) 
                       : (windDirection == встречный) ? (1.0 - windStrength * 0.5) 
                       : 1.0;
+```                      
 ## Горение дерева (Burning → Burnt)
 Описание: Горящее дерево уменьшается во времени горения (3 шага). Когда время истекает, дерево становится пеплом.
-
+```c#
 case CellState.Burning:
     nextCell.BurnTime--;
     if (nextCell.BurnTime <= 0)
@@ -106,7 +107,7 @@ if (currentCell.IsBarrier)
     newTotalTrees++;
     continue;  // пропускаем все правила
 }
-
+```
 # САМЫЙ СОК
 
 ## Первое место 
@@ -114,7 +115,7 @@ if (currentCell.IsBarrier)
 Расчёт вероятности (Математика)
 Метод: CalculateIgnitionProbability()
 Здесь происходит превращение настроек (температура, ветер) в конкретное число — шанс пожара. 
-
+```c#
 // Температура
 probability *= (0.5 + temperature);
 
@@ -127,11 +128,11 @@ else if (IsOppositeDirection(...))
 {
     probability *= (1.0 - windStrength * 0.5);  // Затухание
 }
-
+```
 ## Второе место
 
 Метод: DoStep() (внутри цикла проверки соседей)
-
+```c#
 // 1. Берём рассчитанную вероятность
 double prob = CalculateIgnitionProbability(x, y, nx, ny);
 
@@ -155,3 +156,4 @@ if (rand.NextDouble() < prob)
 2. При treeGrowth > 0.05 лес успевает восстанавливаться, переходя в режим «устойчивой экосистемы».
 3. Барьеры эффективны только при длине >10 клеток и стратегическом размещении.
 4. Ветер создаёт асимметрию: даже при одинаковой базовой вероятности огонь распространяется анизотропно — быстрее по ветру, медленнее против. Это соответствует реальной физике горения.
+
