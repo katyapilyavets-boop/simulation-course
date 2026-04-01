@@ -1,0 +1,9 @@
+C:\Users\Екатерина\Desktop\ИМ\lab5_part2\lab5_part2\bin\Debug\lab5_part2.exe.config
+C:\Users\Екатерина\Desktop\ИМ\lab5_part2\lab5_part2\bin\Debug\lab5_part2.exe
+C:\Users\Екатерина\Desktop\ИМ\lab5_part2\lab5_part2\bin\Debug\lab5_part2.pdb
+C:\Users\Екатерина\Desktop\ИМ\lab5_part2\lab5_part2\obj\Debug\lab5_part2.csproj.AssemblyReference.cache
+C:\Users\Екатерина\Desktop\ИМ\lab5_part2\lab5_part2\obj\Debug\lab5_part2.Properties.Resources.resources
+C:\Users\Екатерина\Desktop\ИМ\lab5_part2\lab5_part2\obj\Debug\lab5_part2.csproj.GenerateResource.cache
+C:\Users\Екатерина\Desktop\ИМ\lab5_part2\lab5_part2\obj\Debug\lab5_part2.csproj.CoreCompileInputs.cache
+C:\Users\Екатерина\Desktop\ИМ\lab5_part2\lab5_part2\obj\Debug\lab5_part2.exe
+C:\Users\Екатерина\Desktop\ИМ\lab5_part2\lab5_part2\obj\Debug\lab5_part2.pdb
