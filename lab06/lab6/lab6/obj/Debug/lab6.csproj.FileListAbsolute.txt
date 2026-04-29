@@ -1,0 +1,10 @@
+C:\Users\Екатерина\Desktop\ИМ\lab6\lab6\obj\Debug\lab6.csproj.AssemblyReference.cache
+C:\Users\Екатерина\Desktop\ИМ\lab6\lab6\obj\Debug\SimulationModeling.Form1.resources
+C:\Users\Екатерина\Desktop\ИМ\lab6\lab6\obj\Debug\lab6.Properties.Resources.resources
+C:\Users\Екатерина\Desktop\ИМ\lab6\lab6\obj\Debug\lab6.csproj.GenerateResource.cache
+C:\Users\Екатерина\Desktop\ИМ\lab6\lab6\obj\Debug\lab6.csproj.CoreCompileInputs.cache
+C:\Users\Екатерина\Desktop\ИМ\lab6\lab6\bin\Debug\lab6.exe.config
+C:\Users\Екатерина\Desktop\ИМ\lab6\lab6\bin\Debug\lab6.exe
+C:\Users\Екатерина\Desktop\ИМ\lab6\lab6\bin\Debug\lab6.pdb
+C:\Users\Екатерина\Desktop\ИМ\lab6\lab6\obj\Debug\lab6.exe
+C:\Users\Екатерина\Desktop\ИМ\lab6\lab6\obj\Debug\lab6.pdb
