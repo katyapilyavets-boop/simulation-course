@@ -1,0 +1,79 @@
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\lab6.exe
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\lab6.deps.json
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\lab6.runtimeconfig.json
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\lab6.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\lab6.pdb
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\Azure.Core.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\Azure.Identity.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\System.Windows.Forms.DataVisualization.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.Data.SqlClient.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.Identity.Client.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\System.Runtime.Caching.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\ООАП 2 сем\lab6\lab6\bin\Debug\net9.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\ООАП 2 сем\lab6\lab6\obj\Debug\net9.0-windows\lab6.csproj.AssemblyReference.cache
+C:\ООАП 2 сем\lab6\lab6\obj\Debug\net9.0-windows\lab6.Form1.resources
+C:\ООАП 2 сем\lab6\lab6\obj\Debug\net9.0-windows\lab6.csproj.GenerateResource.cache
+C:\ООАП 2 сем\lab6\lab6\obj\Debug\net9.0-windows\lab6.GeneratedMSBuildEditorConfig.editorconfig
+C:\ООАП 2 сем\lab6\lab6\obj\Debug\net9.0-windows\lab6.AssemblyInfoInputs.cache
+C:\ООАП 2 сем\lab6\lab6\obj\Debug\net9.0-windows\lab6.AssemblyInfo.cs
+C:\ООАП 2 сем\lab6\lab6\obj\Debug\net9.0-windows\lab6.csproj.CoreCompileInputs.cache
+C:\ООАП 2 сем\lab6\lab6\obj\Debug\net9.0-windows\lab6.csproj.Up2Date
+C:\ООАП 2 сем\lab6\lab6\obj\Debug\net9.0-windows\lab6.dll
+C:\ООАП 2 сем\lab6\lab6\obj\Debug\net9.0-windows\refint\lab6.dll
+C:\ООАП 2 сем\lab6\lab6\obj\Debug\net9.0-windows\lab6.pdb
+C:\ООАП 2 сем\lab6\lab6\obj\Debug\net9.0-windows\lab6.genruntimeconfig.cache
+C:\ООАП 2 сем\lab6\lab6\obj\Debug\net9.0-windows\ref\lab6.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\lab6.exe
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\lab6.deps.json
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\lab6.runtimeconfig.json
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\lab6.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\lab6.pdb
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\Azure.Core.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\Azure.Identity.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\System.Windows.Forms.DataVisualization.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.Identity.Client.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\System.Runtime.Caching.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\bin\Debug\net9.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\obj\Debug\net9.0-windows\lab6.csproj.AssemblyReference.cache
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\obj\Debug\net9.0-windows\lab6.Form1.resources
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\obj\Debug\net9.0-windows\lab6.csproj.GenerateResource.cache
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\obj\Debug\net9.0-windows\lab6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\obj\Debug\net9.0-windows\lab6.AssemblyInfoInputs.cache
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\obj\Debug\net9.0-windows\lab6.AssemblyInfo.cs
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\obj\Debug\net9.0-windows\lab6.csproj.CoreCompileInputs.cache
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\obj\Debug\net9.0-windows\lab6.sourcelink.json
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\obj\Debug\net9.0-windows\lab6.csproj.Up2Date
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\obj\Debug\net9.0-windows\lab6.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\obj\Debug\net9.0-windows\refint\lab6.dll
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\obj\Debug\net9.0-windows\lab6.pdb
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\obj\Debug\net9.0-windows\lab6.genruntimeconfig.cache
+C:\Users\Екатерина\Desktop\ИМ\katyapilyavets-boop\simulation-course\lab06\lab6\lab6\obj\Debug\net9.0-windows\ref\lab6.dll

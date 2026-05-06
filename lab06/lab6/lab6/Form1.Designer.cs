@@ -1,507 +1,574 @@
-﻿namespace SimulationModeling
+﻿using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace lab6
 {
     partial class Form1
     {
+
         private System.ComponentModel.IContainer components = null;
 
+
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && components != null) components.Dispose();
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
             base.Dispose(disposing);
         }
 
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabDiscrete = new System.Windows.Forms.TabPage();
-            this.chartDiscrete = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.lblDiscreteSummary = new System.Windows.Forms.Label();
-            this.dgvDiscrete = new System.Windows.Forms.DataGridView();
-            this.colValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTheor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEmp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colFreq = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnN10000 = new System.Windows.Forms.Button();
-            this.btnN1000 = new System.Windows.Forms.Button();
-            this.btnN100 = new System.Windows.Forms.Button();
-            this.btnN10 = new System.Windows.Forms.Button();
-            this.lblProbSum = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtDiscreteSeed = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtP5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtP4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtP3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtP2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtP1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tabNormal = new System.Windows.Forms.TabPage();
-            this.chartHistogram = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.lblNormalSummary = new System.Windows.Forms.Label();
-            this.btnNorm10000 = new System.Windows.Forms.Button();
-            this.btnNorm1000 = new System.Windows.Forms.Button();
-            this.btnNorm100 = new System.Windows.Forms.Button();
-            this.btnNorm10 = new System.Windows.Forms.Button();
-            this.txtNormalSeed = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtSigma2 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtMu = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
-            this.tabDiscrete.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartDiscrete)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDiscrete)).BeginInit();
-            this.tabNormal.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartHistogram)).BeginInit();
-            this.SuspendLayout();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            Start1 = new Button();
+            button3 = new Button();
+            panel1 = new Panel();
+            NumSample = new NumericUpDown();
+            label1 = new Label();
+            dataGridView1 = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            Start2 = new Button();
+            VarRes = new Label();
+            N_experiment = new NumericUpDown();
+            label2 = new Label();
+            labelMean = new Label();
+            labelVar = new Label();
+            label_Chi = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label7 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            labelErrorMean = new Label();
+            labelErrorVar = new Label();
+            label3 = new Label();
+            mean2 = new NumericUpDown();
+            label6 = new Label();
+            var2 = new NumericUpDown();
+            chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            label8 = new Label();
+            N2_experiment = new NumericUpDown();
+            labelVarError2 = new Label();
+            labelMeanError2 = new Label();
+            label13 = new Label();
+            label14 = new Label();
+            label15 = new Label();
+            label16 = new Label();
+            label_Chi_2 = new Label();
+            labelVar2 = new Label();
+            labelMean2 = new Label();
+            ((System.ComponentModel.ISupportInitialize)NumSample).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)chart1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)N_experiment).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)mean2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)var2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)chart2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)N2_experiment).BeginInit();
+            SuspendLayout();
             // 
-            // tabControl1
+            // Start1
             // 
-            this.tabControl1.Controls.Add(this.tabDiscrete);
-            this.tabControl1.Controls.Add(this.tabNormal);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1284, 761);
-            this.tabControl1.TabIndex = 0;
+            Start1.BackColor = Color.ForestGreen;
+            Start1.FlatStyle = FlatStyle.Popup;
+            Start1.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            Start1.ForeColor = SystemColors.Window;
+            Start1.Location = new Point(851, 679);
+            Start1.Name = "Start1";
+            Start1.Size = new Size(112, 42);
+            Start1.TabIndex = 0;
+            Start1.Text = "Старт";
+            Start1.UseVisualStyleBackColor = false;
+            Start1.Click += Start1_Click;
             // 
-            // tabDiscrete
+            // button3
             // 
-            this.tabDiscrete.Controls.Add(this.chartDiscrete);
-            this.tabDiscrete.Controls.Add(this.lblDiscreteSummary);
-            this.tabDiscrete.Controls.Add(this.dgvDiscrete);
-            this.tabDiscrete.Controls.Add(this.btnN10000);
-            this.tabDiscrete.Controls.Add(this.btnN1000);
-            this.tabDiscrete.Controls.Add(this.btnN100);
-            this.tabDiscrete.Controls.Add(this.btnN10);
-            this.tabDiscrete.Controls.Add(this.lblProbSum);
-            this.tabDiscrete.Controls.Add(this.label7);
-            this.tabDiscrete.Controls.Add(this.txtDiscreteSeed);
-            this.tabDiscrete.Controls.Add(this.label6);
-            this.tabDiscrete.Controls.Add(this.txtP5);
-            this.tabDiscrete.Controls.Add(this.label5);
-            this.tabDiscrete.Controls.Add(this.txtP4);
-            this.tabDiscrete.Controls.Add(this.label4);
-            this.tabDiscrete.Controls.Add(this.txtP3);
-            this.tabDiscrete.Controls.Add(this.label3);
-            this.tabDiscrete.Controls.Add(this.txtP2);
-            this.tabDiscrete.Controls.Add(this.label2);
-            this.tabDiscrete.Controls.Add(this.txtP1);
-            this.tabDiscrete.Controls.Add(this.label1);
-            this.tabDiscrete.Location = new System.Drawing.Point(4, 29);
-            this.tabDiscrete.Name = "tabDiscrete";
-            this.tabDiscrete.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDiscrete.Size = new System.Drawing.Size(1276, 728);
-            this.tabDiscrete.TabIndex = 0;
-            this.tabDiscrete.Text = "Дискретная СВ";
-            this.tabDiscrete.UseVisualStyleBackColor = true;
+            button3.BackColor = Color.Red;
+            button3.DialogResult = DialogResult.Cancel;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Font = new Font("Segoe UI Black", 10F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button3.ForeColor = SystemColors.Window;
+            button3.Location = new Point(1803, 12);
+            button3.Name = "button3";
+            button3.Size = new Size(40, 40);
+            button3.TabIndex = 2;
+            button3.Text = "X";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
-            // chartDiscrete
+            // panel1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartDiscrete.ChartAreas.Add(chartArea1);
-            this.chartDiscrete.Location = new System.Drawing.Point(540, 280);
-            this.chartDiscrete.Name = "chartDiscrete";
-            this.chartDiscrete.Size = new System.Drawing.Size(720, 420);
-            this.chartDiscrete.TabIndex = 22;
-            this.chartDiscrete.Text = "chart1";
+            panel1.BackColor = SystemColors.ActiveCaptionText;
+            panel1.Location = new Point(977, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(2, 1000);
+            panel1.TabIndex = 3;
             // 
-            // lblDiscreteSummary
+            // NumSample
             // 
-            this.lblDiscreteSummary.AutoSize = true;
-            this.lblDiscreteSummary.Location = new System.Drawing.Point(15, 550);
-            this.lblDiscreteSummary.Name = "lblDiscreteSummary";
-            this.lblDiscreteSummary.Size = new System.Drawing.Size(0, 20);
-            this.lblDiscreteSummary.TabIndex = 20;
-            // 
-            // dgvDiscrete
-            // 
-            this.dgvDiscrete.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDiscrete.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colValue, this.colTheor, this.colEmp, this.colFreq});
-            this.dgvDiscrete.Location = new System.Drawing.Point(15, 280);
-            this.dgvDiscrete.Name = "dgvDiscrete";
-            this.dgvDiscrete.RowHeadersWidth = 51;
-            this.dgvDiscrete.Size = new System.Drawing.Size(500, 250);
-            this.dgvDiscrete.TabIndex = 19;
-            // 
-            // colValue
-            // 
-            this.colValue.HeaderText = "x";
-            this.colValue.Name = "colValue";
-            this.colValue.Width = 50;
-            // 
-            // colTheor
-            // 
-            this.colTheor.HeaderText = "Pтеор";
-            this.colTheor.Name = "colTheor";
-            this.colTheor.Width = 90;
-            // 
-            // colEmp
-            // 
-            this.colEmp.HeaderText = "Pэмп";
-            this.colEmp.Name = "colEmp";
-            this.colEmp.Width = 90;
-            // 
-            // colFreq
-            // 
-            this.colFreq.HeaderText = "Частота";
-            this.colFreq.Name = "colFreq";
-            this.colFreq.Width = 90;
-            // 
-            // btnN10000
-            // 
-            this.btnN10000.Location = new System.Drawing.Point(420, 230);
-            this.btnN10000.Name = "btnN10000";
-            this.btnN10000.Size = new System.Drawing.Size(90, 30);
-            this.btnN10000.TabIndex = 18;
-            this.btnN10000.Text = "N=10000";
-            this.btnN10000.UseVisualStyleBackColor = true;
-            // 
-            // btnN1000
-            // 
-            this.btnN1000.Location = new System.Drawing.Point(310, 230);
-            this.btnN1000.Name = "btnN1000";
-            this.btnN1000.Size = new System.Drawing.Size(90, 30);
-            this.btnN1000.TabIndex = 17;
-            this.btnN1000.Text = "N=1000";
-            this.btnN1000.UseVisualStyleBackColor = true;
-            // 
-            // btnN100
-            // 
-            this.btnN100.Location = new System.Drawing.Point(200, 230);
-            this.btnN100.Name = "btnN100";
-            this.btnN100.Size = new System.Drawing.Size(90, 30);
-            this.btnN100.TabIndex = 16;
-            this.btnN100.Text = "N=100";
-            this.btnN100.UseVisualStyleBackColor = true;
-            // 
-            // btnN10
-            // 
-            this.btnN10.Location = new System.Drawing.Point(90, 230);
-            this.btnN10.Name = "btnN10";
-            this.btnN10.Size = new System.Drawing.Size(90, 30);
-            this.btnN10.TabIndex = 15;
-            this.btnN10.Text = "N=10";
-            this.btnN10.UseVisualStyleBackColor = true;
-            // 
-            // lblProbSum
-            // 
-            this.lblProbSum.AutoSize = true;
-            this.lblProbSum.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.lblProbSum.Location = new System.Drawing.Point(440, 155);
-            this.lblProbSum.Name = "lblProbSum";
-            this.lblProbSum.Size = new System.Drawing.Size(51, 20);
-            this.lblProbSum.TabIndex = 14;
-            this.lblProbSum.Text = "1.0000";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(360, 155);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 20);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Сумма = ";
-            // 
-            // txtDiscreteSeed
-            // 
-            this.txtDiscreteSeed.Location = new System.Drawing.Point(140, 190);
-            this.txtDiscreteSeed.Name = "txtDiscreteSeed";
-            this.txtDiscreteSeed.Size = new System.Drawing.Size(100, 27);
-            this.txtDiscreteSeed.TabIndex = 12;
-            this.txtDiscreteSeed.Text = "12345";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(15, 193);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 20);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Seed (зерно):";
-            // 
-            // txtP5
-            // 
-            this.txtP5.Location = new System.Drawing.Point(440, 120);
-            this.txtP5.Name = "txtP5";
-            this.txtP5.Size = new System.Drawing.Size(80, 27);
-            this.txtP5.TabIndex = 10;
-            this.txtP5.Text = "0.2";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(380, 123);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 20);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "P(x=5):";
-            // 
-            // txtP4
-            // 
-            this.txtP4.Location = new System.Drawing.Point(440, 80);
-            this.txtP4.Name = "txtP4";
-            this.txtP4.Size = new System.Drawing.Size(80, 27);
-            this.txtP4.TabIndex = 8;
-            this.txtP4.Text = "0.2";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(380, 83);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 20);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "P(x=4):";
-            // 
-            // txtP3
-            // 
-            this.txtP3.Location = new System.Drawing.Point(220, 120);
-            this.txtP3.Name = "txtP3";
-            this.txtP3.Size = new System.Drawing.Size(80, 27);
-            this.txtP3.TabIndex = 6;
-            this.txtP3.Text = "0.2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(160, 123);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 20);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "P(x=3):";
-            // 
-            // txtP2
-            // 
-            this.txtP2.Location = new System.Drawing.Point(220, 80);
-            this.txtP2.Name = "txtP2";
-            this.txtP2.Size = new System.Drawing.Size(80, 27);
-            this.txtP2.TabIndex = 4;
-            this.txtP2.Text = "0.2";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(160, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "P(x=2):";
-            // 
-            // txtP1
-            // 
-            this.txtP1.Location = new System.Drawing.Point(100, 50);
-            this.txtP1.Name = "txtP1";
-            this.txtP1.Size = new System.Drawing.Size(80, 27);
-            this.txtP1.TabIndex = 2;
-            this.txtP1.Text = "0.2";
+            NumSample.Location = new Point(171, 73);
+            NumSample.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
+            NumSample.Minimum = new decimal(new int[] { 2, 0, 0, 0 });
+            NumSample.Name = "NumSample";
+            NumSample.Size = new Size(108, 31);
+            NumSample.TabIndex = 4;
+            NumSample.Value = new decimal(new int[] { 5, 0, 0, 0 });
+            NumSample.ValueChanged += numRowsCount_ValueChanged;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "P(x=1):";
+            label1.AutoSize = true;
+            label1.Location = new Point(7, 75);
+            label1.Name = "label1";
+            label1.Size = new Size(151, 25);
+            label1.TabIndex = 5;
+            label1.Text = "Кол-во значений";
             // 
-            // tabNormal
+            // dataGridView1
             // 
-            this.tabNormal.Controls.Add(this.chartHistogram);
-            this.tabNormal.Controls.Add(this.lblNormalSummary);
-            this.tabNormal.Controls.Add(this.btnNorm10000);
-            this.tabNormal.Controls.Add(this.btnNorm1000);
-            this.tabNormal.Controls.Add(this.btnNorm100);
-            this.tabNormal.Controls.Add(this.btnNorm10);
-            this.tabNormal.Controls.Add(this.txtNormalSeed);
-            this.tabNormal.Controls.Add(this.label13);
-            this.tabNormal.Controls.Add(this.txtSigma2);
-            this.tabNormal.Controls.Add(this.label12);
-            this.tabNormal.Controls.Add(this.txtMu);
-            this.tabNormal.Controls.Add(this.label11);
-            this.tabNormal.Location = new System.Drawing.Point(4, 29);
-            this.tabNormal.Name = "tabNormal";
-            this.tabNormal.Padding = new System.Windows.Forms.Padding(3);
-            this.tabNormal.Size = new System.Drawing.Size(1276, 728);
-            this.tabNormal.TabIndex = 1;
-            this.tabNormal.Text = "Нормальная СВ";
-            this.tabNormal.UseVisualStyleBackColor = true;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2 });
+            dataGridView1.Location = new Point(28, 175);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.Size = new Size(229, 547);
+            dataGridView1.TabIndex = 6;
+            dataGridView1.CellValueChanged += CellValueChanged;
             // 
-            // chartHistogram
+            // Column1
+            // 
+            Column1.HeaderText = "Значение";
+            Column1.MinimumWidth = 8;
+            Column1.Name = "Column1";
+            Column1.Width = 150;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Вероятность";
+            Column2.MinimumWidth = 8;
+            Column2.Name = "Column2";
+            Column2.Width = 120;
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            chart1.Legends.Add(legend1);
+            chart1.Location = new Point(285, 27);
+            chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            chart1.Series.Add(series1);
+            chart1.Size = new Size(686, 532);
+            chart1.TabIndex = 7;
+            chart1.Text = "chart1";
+            // 
+            // Start2
+            // 
+            Start2.BackColor = Color.ForestGreen;
+            Start2.FlatStyle = FlatStyle.Popup;
+            Start2.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            Start2.ForeColor = SystemColors.Window;
+            Start2.Location = new Point(1721, 679);
+            Start2.Name = "Start2";
+            Start2.Size = new Size(112, 42);
+            Start2.TabIndex = 8;
+            Start2.Text = "Старт";
+            Start2.UseVisualStyleBackColor = false;
+            Start2.Click += Start2_Click;
+            // 
+            // VarRes
+            // 
+            VarRes.AutoSize = true;
+            VarRes.Location = new Point(91, 147);
+            VarRes.Name = "VarRes";
+            VarRes.Size = new Size(96, 25);
+            VarRes.TabIndex = 9;
+            VarRes.Text = "Остаток: 1";
+            // 
+            // N_experiment
+            // 
+            N_experiment.Location = new Point(171, 27);
+            N_experiment.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            N_experiment.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            N_experiment.Name = "N_experiment";
+            N_experiment.Size = new Size(108, 31);
+            N_experiment.TabIndex = 10;
+            N_experiment.Value = new decimal(new int[] { 5, 0, 0, 0 });
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(7, 29);
+            label2.Name = "label2";
+            label2.Size = new Size(162, 25);
+            label2.TabIndex = 11;
+            label2.Text = "Кол-во испытаний";
+            // 
+            // labelMean
+            // 
+            labelMean.AutoSize = true;
+            labelMean.Location = new Point(434, 589);
+            labelMean.Name = "labelMean";
+            labelMean.Size = new Size(59, 25);
+            labelMean.TabIndex = 13;
+            labelMean.Text = "label2";
+            // 
+            // labelVar
+            // 
+            labelVar.AutoSize = true;
+            labelVar.Location = new Point(434, 637);
+            labelVar.Name = "labelVar";
+            labelVar.Size = new Size(59, 25);
+            labelVar.TabIndex = 14;
+            labelVar.Text = "label2";
+            // 
+            // label_Chi
+            // 
+            label_Chi.AutoSize = true;
+            label_Chi.Location = new Point(313, 689);
+            label_Chi.Name = "label_Chi";
+            label_Chi.Size = new Size(59, 25);
+            label_Chi.TabIndex = 15;
+            label_Chi.Text = "label2";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(313, 589);
+            label4.Name = "label4";
+            label4.Size = new Size(85, 25);
+            label4.TabIndex = 16;
+            label4.Text = "Cреднее:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(313, 637);
+            label5.Name = "label5";
+            label5.Size = new Size(103, 25);
+            label5.TabIndex = 17;
+            label5.Text = "Дисперсия:";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(526, 589);
+            label7.Name = "label7";
+            label7.Size = new Size(82, 25);
+            label7.TabIndex = 19;
+            label7.Text = "Ошибка:";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(876, 368);
+            label9.Name = "label9";
+            label9.Size = new Size(0, 25);
+            label9.TabIndex = 21;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(526, 637);
+            label10.Name = "label10";
+            label10.Size = new Size(82, 25);
+            label10.TabIndex = 22;
+            label10.Text = "Ошибка:";
+            // 
+            // labelErrorMean
+            // 
+            labelErrorMean.AutoSize = true;
+            labelErrorMean.Location = new Point(630, 589);
+            labelErrorMean.Name = "labelErrorMean";
+            labelErrorMean.Size = new Size(59, 25);
+            labelErrorMean.TabIndex = 23;
+            labelErrorMean.Text = "label2";
+            // 
+            // labelErrorVar
+            // 
+            labelErrorVar.AutoSize = true;
+            labelErrorVar.Location = new Point(630, 637);
+            labelErrorVar.Name = "labelErrorVar";
+            labelErrorVar.Size = new Size(59, 25);
+            labelErrorVar.TabIndex = 24;
+            labelErrorVar.Text = "label2";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(1011, 639);
+            label3.Name = "label3";
+            label3.Size = new Size(81, 25);
+            label3.TabIndex = 28;
+            label3.Text = "Среднее";
+            // 
+            // mean2
+            // 
+            mean2.DecimalPlaces = 3;
+            mean2.Increment = new decimal(new int[] { 1, 0, 0, 131072 });
+            mean2.Location = new Point(1175, 637);
+            mean2.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            mean2.Minimum = new decimal(new int[] { 100000, 0, 0, int.MinValue });
+            mean2.Name = "mean2";
+            mean2.Size = new Size(108, 31);
+            mean2.TabIndex = 27;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(1011, 685);
+            label6.Name = "label6";
+            label6.Size = new Size(99, 25);
+            label6.TabIndex = 26;
+            label6.Text = "Дисперсия";
+            // 
+            // var2
+            // 
+            var2.DecimalPlaces = 3;
+            var2.Increment = new decimal(new int[] { 1, 0, 0, 131072 });
+            var2.Location = new Point(1175, 683);
+            var2.Maximum = new decimal(new int[] { 10000, 0, 0, 0 });
+            var2.Minimum = new decimal(new int[] { 10000, 0, 0, int.MinValue });
+            var2.Name = "var2";
+            var2.Size = new Size(108, 31);
+            var2.TabIndex = 25;
+            var2.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            // 
+            // chart2
             // 
             chartArea2.Name = "ChartArea1";
-            this.chartHistogram.ChartAreas.Add(chartArea2);
-            this.chartHistogram.Location = new System.Drawing.Point(540, 200);
-            this.chartHistogram.Name = "chartHistogram";
-            this.chartHistogram.Size = new System.Drawing.Size(720, 500);
-            this.chartHistogram.TabIndex = 24;
-            this.chartHistogram.Text = "chart2";
+            chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            chart2.Legends.Add(legend2);
+            chart2.Location = new Point(1011, 27);
+            chart2.Name = "chart2";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            chart2.Series.Add(series2);
+            chart2.Size = new Size(686, 532);
+            chart2.TabIndex = 29;
+            chart2.Text = "chart2";
             // 
-            // lblNormalSummary
+            // label8
             // 
-            this.lblNormalSummary.AutoSize = true;
-            this.lblNormalSummary.Location = new System.Drawing.Point(20, 320);
-            this.lblNormalSummary.Name = "lblNormalSummary";
-            this.lblNormalSummary.Size = new System.Drawing.Size(0, 20);
-            this.lblNormalSummary.TabIndex = 22;
+            label8.AutoSize = true;
+            label8.Location = new Point(1011, 591);
+            label8.Name = "label8";
+            label8.Size = new Size(162, 25);
+            label8.TabIndex = 31;
+            label8.Text = "Кол-во испытаний";
             // 
-            // btnNorm10000
+            // N2_experiment
             // 
-            this.btnNorm10000.Location = new System.Drawing.Point(420, 200);
-            this.btnNorm10000.Name = "btnNorm10000";
-            this.btnNorm10000.Size = new System.Drawing.Size(90, 30);
-            this.btnNorm10000.TabIndex = 21;
-            this.btnNorm10000.Text = "N=10000";
-            this.btnNorm10000.UseVisualStyleBackColor = true;
+            N2_experiment.Location = new Point(1175, 589);
+            N2_experiment.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
+            N2_experiment.Minimum = new decimal(new int[] { 5, 0, 0, 0 });
+            N2_experiment.Name = "N2_experiment";
+            N2_experiment.Size = new Size(108, 31);
+            N2_experiment.TabIndex = 30;
+            N2_experiment.Value = new decimal(new int[] { 5, 0, 0, 0 });
             // 
-            // btnNorm1000
+            // labelVarError2
             // 
-            this.btnNorm1000.Location = new System.Drawing.Point(310, 200);
-            this.btnNorm1000.Name = "btnNorm1000";
-            this.btnNorm1000.Size = new System.Drawing.Size(90, 30);
-            this.btnNorm1000.TabIndex = 20;
-            this.btnNorm1000.Text = "N=1000";
-            this.btnNorm1000.UseVisualStyleBackColor = true;
+            labelVarError2.AutoSize = true;
+            labelVarError2.Location = new Point(1638, 639);
+            labelVarError2.Name = "labelVarError2";
+            labelVarError2.Size = new Size(59, 25);
+            labelVarError2.TabIndex = 40;
+            labelVarError2.Text = "label2";
             // 
-            // btnNorm100
+            // labelMeanError2
             // 
-            this.btnNorm100.Location = new System.Drawing.Point(200, 200);
-            this.btnNorm100.Name = "btnNorm100";
-            this.btnNorm100.Size = new System.Drawing.Size(90, 30);
-            this.btnNorm100.TabIndex = 19;
-            this.btnNorm100.Text = "N=100";
-            this.btnNorm100.UseVisualStyleBackColor = true;
-            // 
-            // btnNorm10
-            // 
-            this.btnNorm10.Location = new System.Drawing.Point(90, 200);
-            this.btnNorm10.Name = "btnNorm10";
-            this.btnNorm10.Size = new System.Drawing.Size(90, 30);
-            this.btnNorm10.TabIndex = 18;
-            this.btnNorm10.Text = "N=10";
-            this.btnNorm10.UseVisualStyleBackColor = true;
-            // 
-            // txtNormalSeed
-            // 
-            this.txtNormalSeed.Location = new System.Drawing.Point(140, 160);
-            this.txtNormalSeed.Name = "txtNormalSeed";
-            this.txtNormalSeed.Size = new System.Drawing.Size(100, 27);
-            this.txtNormalSeed.TabIndex = 17;
-            this.txtNormalSeed.Text = "12345";
+            labelMeanError2.AutoSize = true;
+            labelMeanError2.Location = new Point(1638, 591);
+            labelMeanError2.Name = "labelMeanError2";
+            labelMeanError2.Size = new Size(59, 25);
+            labelMeanError2.TabIndex = 39;
+            labelMeanError2.Text = "label2";
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(15, 163);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(99, 20);
-            this.label13.TabIndex = 16;
-            this.label13.Text = "Seed (зерно):";
+            label13.AutoSize = true;
+            label13.Location = new Point(1534, 639);
+            label13.Name = "label13";
+            label13.Size = new Size(82, 25);
+            label13.TabIndex = 38;
+            label13.Text = "Ошибка:";
             // 
-            // txtSigma2
+            // label14
             // 
-            this.txtSigma2.Location = new System.Drawing.Point(140, 120);
-            this.txtSigma2.Name = "txtSigma2";
-            this.txtSigma2.Size = new System.Drawing.Size(100, 27);
-            this.txtSigma2.TabIndex = 15;
-            this.txtSigma2.Text = "1";
+            label14.AutoSize = true;
+            label14.Location = new Point(1534, 591);
+            label14.Name = "label14";
+            label14.Size = new Size(82, 25);
+            label14.TabIndex = 37;
+            label14.Text = "Ошибка:";
             // 
-            // label12
+            // label15
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(15, 123);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(74, 20);
-            this.label12.TabIndex = 14;
-            this.label12.Text = "Дисперсия σ²:";
+            label15.AutoSize = true;
+            label15.Location = new Point(1321, 639);
+            label15.Name = "label15";
+            label15.Size = new Size(103, 25);
+            label15.TabIndex = 36;
+            label15.Text = "Дисперсия:";
             // 
-            // txtMu
+            // label16
             // 
-            this.txtMu.Location = new System.Drawing.Point(140, 80);
-            this.txtMu.Name = "txtMu";
-            this.txtMu.Size = new System.Drawing.Size(100, 27);
-            this.txtMu.TabIndex = 13;
-            this.txtMu.Text = "0";
+            label16.AutoSize = true;
+            label16.Location = new Point(1321, 591);
+            label16.Name = "label16";
+            label16.Size = new Size(85, 25);
+            label16.TabIndex = 35;
+            label16.Text = "Cреднее:";
             // 
-            // label11
+            // label_Chi_2
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(15, 83);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(98, 20);
-            this.label11.TabIndex = 12;
-            this.label11.Text = "Мат. ожидание μ:";
+            label_Chi_2.AutoSize = true;
+            label_Chi_2.Location = new Point(1321, 691);
+            label_Chi_2.Name = "label_Chi_2";
+            label_Chi_2.Size = new Size(59, 25);
+            label_Chi_2.TabIndex = 34;
+            label_Chi_2.Text = "label2";
+            // 
+            // labelVar2
+            // 
+            labelVar2.AutoSize = true;
+            labelVar2.Location = new Point(1442, 639);
+            labelVar2.Name = "labelVar2";
+            labelVar2.Size = new Size(59, 25);
+            labelVar2.TabIndex = 33;
+            labelVar2.Text = "label2";
+            // 
+            // labelMean2
+            // 
+            labelMean2.AutoSize = true;
+            labelMean2.Location = new Point(1442, 591);
+            labelMean2.Name = "labelMean2";
+            labelMean2.Size = new Size(59, 25);
+            labelMean2.TabIndex = 32;
+            labelMean2.Text = "label2";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 761);
-            this.Controls.Add(this.tabControl1);
-            this.Name = "Form1";
-            this.Text = "Имитационное моделирование СВ";
-            this.tabControl1.ResumeLayout(false);
-            this.tabDiscrete.ResumeLayout(false);
-            this.tabDiscrete.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartDiscrete)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDiscrete)).EndInit();
-            this.tabNormal.ResumeLayout(false);
-            this.tabNormal.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartHistogram)).EndInit();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1855, 1000);
+            Controls.Add(labelVarError2);
+            Controls.Add(labelMeanError2);
+            Controls.Add(label13);
+            Controls.Add(label14);
+            Controls.Add(label15);
+            Controls.Add(label16);
+            Controls.Add(label_Chi_2);
+            Controls.Add(labelVar2);
+            Controls.Add(labelMean2);
+            Controls.Add(label8);
+            Controls.Add(N2_experiment);
+            Controls.Add(chart2);
+            Controls.Add(label3);
+            Controls.Add(mean2);
+            Controls.Add(label6);
+            Controls.Add(var2);
+            Controls.Add(labelErrorVar);
+            Controls.Add(labelErrorMean);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label7);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label_Chi);
+            Controls.Add(labelVar);
+            Controls.Add(labelMean);
+            Controls.Add(label2);
+            Controls.Add(N_experiment);
+            Controls.Add(VarRes);
+            Controls.Add(Start2);
+            Controls.Add(chart1);
+            Controls.Add(dataGridView1);
+            Controls.Add(label1);
+            Controls.Add(NumSample);
+            Controls.Add(panel1);
+            Controls.Add(button3);
+            Controls.Add(Start1);
+            StartPosition = FormStartPosition.CenterScreen;
+            WindowState = FormWindowState.Maximized;
+            MinimumSize = new Size(1200, 700);
+            Name = "Form1";
+            Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)NumSample).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)chart1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)N_experiment).EndInit();
+            ((System.ComponentModel.ISupportInitialize)mean2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)var2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)chart2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)N2_experiment).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabDiscrete;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartDiscrete;
-        private System.Windows.Forms.Label lblDiscreteSummary;
-        private System.Windows.Forms.DataGridView dgvDiscrete;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colValue;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTheor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colEmp;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colFreq;
-        private System.Windows.Forms.Button btnN10000;
-        private System.Windows.Forms.Button btnN1000;
-        private System.Windows.Forms.Button btnN100;
-        private System.Windows.Forms.Button btnN10;
-        private System.Windows.Forms.Label lblProbSum;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtDiscreteSeed;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtP5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtP4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtP3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtP2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtP1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabPage tabNormal;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartHistogram;
-        private System.Windows.Forms.Label lblNormalSummary;
-        private System.Windows.Forms.Button btnNorm10000;
-        private System.Windows.Forms.Button btnNorm1000;
-        private System.Windows.Forms.Button btnNorm100;
-        private System.Windows.Forms.Button btnNorm10;
-        private System.Windows.Forms.TextBox txtNormalSeed;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtSigma2;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtMu;
-        private System.Windows.Forms.Label label11;
+        #endregion
+
+        private Button Start1;
+        private Button button3;
+        private Panel panel1;
+        private NumericUpDown NumSample;
+        private Label label1;
+        private DataGridView dataGridView1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private Button Start2;
+        private Label VarRes;
+        private NumericUpDown N_experiment;
+        private Label label2;
+        private Label labelMean;
+        private Label labelVar;
+        private Label label_Chi;
+        private Label label4;
+        private Label label5;
+        private Label label7;
+        private Label label9;
+        private Label label10;
+        private Label labelErrorMean;
+        private Label labelErrorVar;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private Label label3;
+        private NumericUpDown mean2;
+        private Label label6;
+        private NumericUpDown var2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private Label label8;
+        private NumericUpDown N2_experiment;
+        private Label labelVarError2;
+        private Label labelMeanError2;
+        private Label label13;
+        private Label label14;
+        private Label label15;
+        private Label label16;
+        private Label label_Chi_2;
+        private Label labelVar2;
+        private Label labelMean2;
     }
 }
